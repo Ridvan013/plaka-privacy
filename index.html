@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — PLAKA!</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; max-width: 720px;
+         margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6;
+         color: #1d2433; background: #f6f8fc; }
+  h1 { font-size: 1.6rem; border-bottom: 2px solid #e8a317; padding-bottom: .4rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; color: #1f3f7a; }
+  a { color: #1f56b8; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { border: 1px solid #c9d3e6; padding: .4rem .5rem; text-align: left; vertical-align: top; }
+  .meta { color: #5b6478; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f1626; color: #e6ecf8; }
+    h2 { color: #f2c14e; }
+    a { color: #7fb0ff; }
+    th, td { border-color: #2c3a58; }
+    .meta { color: #9aa6bf; }
+  }
+</style>
+</head>
+<body>
+<h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+<p class="meta"><strong>PLAKA! – Türkçe Kelime Oyunu</strong> (com.plakaoyunu.plaka)<br>
+Veri sorumlusu: Rıdvan Dursun · İletişim:
+<a href="mailto:ridvandursun1029@gmail.com">ridvandursun1029@gmail.com</a><br>
+Yürürlük tarihi: 13 Kasım 2026</p>
+
+<h2>Özet</h2>
+<p>PLAKA! bir kelime oyunudur. Tek kişilik modlar internetsiz ve hesapsız oynanır.
+Ad-soyad, e-posta, telefon numarası, konum, rehber, fotoğraf ve reklam kimliği
+<strong>toplanmaz</strong>. Uygulamada reklam ve analiz/takip aracı yoktur.
+İlerlemenin yedeklenmesi, kullanıcı adı ve çok oyunculu maçlar için Google
+Firebase kullanılır.</p>
+
+<h2>Cihazında saklanan veriler</h2>
+<p>Oyun ilerlemen (puanlar, seviye yıldızları, XP, altın, açılan araçlar ve
+renkler, istatistikler) ve ayarların öncelikle telefonunda saklanır.</p>
+
+<h2>Firebase'de saklanan veriler</h2>
+<p>Oyunu başlattığında uygulama, Firebase Authentication ile anonim bir oyuncu
+kimliği oluşturur. Şifre veya e-posta istenmez. Aşağıdaki veriler Google Cloud
+Firestore'da (Frankfurt, Almanya) saklanır:</p>
+<table>
+  <tr><th>Veri</th><th>Amaç</th><th>Hukuki sebep</th></tr>
+  <tr><td>Anonim oyuncu kimliği ve sana özel gizli "Hesap Kodu"</td>
+      <td>Hesabının tanınması, ilerlemenin yedeklenmesi ve başka cihaza taşınması</td>
+      <td>Sözleşmenin ifası (KVKK m.5/2-c)</td></tr>
+  <tr><td>Kullanıcı adı, avatar, araç ve renk seçimi</td>
+      <td>Oyunda ve çok oyunculu odalarda görünme; kullanıcı adlarının benzersiz olması</td>
+      <td>Sözleşmenin ifası</td></tr>
+  <tr><td>Oyun ilerlemesi (puan, yıldız, XP, altın, rekorlar, istatistikler)</td>
+      <td>İlerlemenin yedeklenmesi</td>
+      <td>Sözleşmenin ifası</td></tr>
+  <tr><td>Çok oyunculu maçlarda gönderilen kelimeler, cevap süreleri ve oda mesajları</td>
+      <td>Maçın yürütülmesi ve puanlanması</td>
+      <td>Sözleşmenin ifası</td></tr>
+</table>
+<p>Çok oyunculu maçta odayı kuran oyuncunun telefonu maçı yönetir; diğer
+oyuncuların kullanıcı adı ve avatarını, maç sonunda da kelimelerini ve
+puanlarını görür. Rakiplerin kelimeleri maç bitmeden kimseye gösterilmez.</p>
+<p>Veriler şifreli bağlantıyla aktarılır ve erişim, Firestore güvenlik kurallarıyla
+sınırlandırılır: hesabına yalnızca senin cihazın (Hesap Kodu ile) erişebilir.</p>
+
+<h2>Aktarım</h2>
+<p>Veriler satılmaz ve üçüncü kişilerle paylaşılmaz. Barındırma hizmetini
+Google LLC (Firebase) sağlar; veriler Avrupa Birliği'ndeki (Almanya) sunucularda
+saklandığı için yurt dışına aktarılmış sayılır ve KVKK m.9 kapsamında işlenir.
+Ayrıntılar: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik</a>,
+<a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</p>
+
+<h2>Kullanıcı adları</h2>
+<p>Kullanıcı adın çok oyunculu odalarda diğer oyunculara görünür. Ad; hakaret,
+nefret söylemi, cinsel içerik içeremez ve başka birini taklit edemez. Adlar
+kaydedilmeden önce uygulamadaki uygunsuz kelime listesiyle denetlenir. Uygunsuz
+bir adı <a href="mailto:ridvandursun1029@gmail.com">e-postayla</a> bildirebilirsin;
+incelenip kaldırılır.</p>
+
+<h2 id="hesap-silme">Hesap ve veri silme</h2>
+<ul>
+  <li><strong>Uygulamada:</strong> Ayarlar → <strong>Hesabımı Sil</strong>. Firebase'deki
+      hesap yedeğin ve kullanıcı adın hemen silinir, telefondaki ilerleme sıfırlanır.</li>
+  <li><strong>E-postayla:</strong> uygulamaya artık erişemiyorsan
+      <a href="mailto:ridvandursun1029@gmail.com">ridvandursun1029@gmail.com</a>
+      adresine kullanıcı adını yaz; verilerin silinir ve yanıtla bildirilir.</li>
+</ul>
+<p>Uygulamayı kaldırmak, Firebase'deki yedeği tek başına silmez; yukarıdaki
+yollardan birini kullan.</p>
+
+<h2>Saklama süresi</h2>
+<p>Hesap yedeği ve kullanıcı adı, hesabını silene kadar saklanır. Maç mesajları
+yalnızca anonim oyuncu kimliğini, kullanıcı adını ve maçta yazılan kelimeleri
+içerir; silme talebinde bunlar da silinir.</p>
+
+<h2>Haklarınız (KVKK m.11)</h2>
+<p>Verilerinin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme,
+itiraz etme ve zararın giderilmesini isteme hakların vardır. Talepler için:
+<a href="mailto:ridvandursun1029@gmail.com">ridvandursun1029@gmail.com</a>.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama genel izleyici kitlesine yöneliktir ve çocuklardan bilerek kişisel
+veri toplamaz. 13 yaş altındaki kullanıcıların ebeveyn gözetiminde oynaması önerilir.</p>
+
+<h2>Değişiklikler</h2>
+<p>Veri işleme biçimi değişirse bu sayfa güncellenir ve yürürlük tarihi yenilenir.</p>
+</body>
+</html>
